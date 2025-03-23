@@ -93,6 +93,12 @@ h1{
 .fas{
     color: #28a745;
 }
+.fa-heart{
+    color: orange;
+}
+#credit{
+    margin-bottom: 5px;
+}
 
 .delete-btn:hover{
     background-color: rgb(255, 81, 0);
