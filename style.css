@@ -89,6 +89,9 @@ h1{
     cursor: pointer;
     margin-left: 5px;
 }
+.fas{
+    color: #28a745;
+}
 
 .delete-btn:hover{
     background-color: #c82333;

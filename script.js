@@ -28,7 +28,7 @@ function add_item_to_list(text,date){
     item_date.className = "date-time";
 
     let delete_btn = document.createElement("bitton");
-    delete_btn.textContent="Delete";
+    delete_btn.innerHTML="X";
     delete_btn.className = "delete-btn";
 
     delete_btn.onclick = function(){
@@ -36,7 +36,7 @@ function add_item_to_list(text,date){
         remove_from_storage(text);
     };
     let edit_btn =document.createElement("button");
-    edit_btn.textContent = "Edit";
+    edit_btn.innerHTML = "<i class='far fa-edit'></i>";
     edit_btn.className = "edit-btn";
     edit_btn.onclick = function(){
         let new_text = prompt("Edit your item : ");
