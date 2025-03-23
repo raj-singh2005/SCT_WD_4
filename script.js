@@ -21,7 +21,7 @@ function add_item_to_list(text,date){
     let list_item = document.getElementById("list_item");
     let make_li = document.createElement("li");
     let item_text = document.createElement("span");
-    item_text.textContent = text;
+    item_text.innerHTML =  "<input type='checkbox'></input>"+text;
 
     let item_date = document.createElement("span");
     item_date.textContent = date ;
@@ -41,7 +41,7 @@ function add_item_to_list(text,date){
     edit_btn.onclick = function(){
         let new_text = prompt("Edit your item : ");
         if(new_text && new_text.trim() !== ""){
-            item_text.textContent = new_text;
+            item_text.innerHTML =  "<input type='checkbox'></input>"+new_text;
             Update_storage(text,new_text,date);
         }
     }

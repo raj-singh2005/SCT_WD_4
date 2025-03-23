@@ -109,6 +109,10 @@ h1{
     color: #666;
 }
 
+input[type=checkbox]{
+    margin-right: 10px;
+}
+
 @media (max-width : 500px){
     .container{
         width: 250px;
