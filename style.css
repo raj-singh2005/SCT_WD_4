@@ -14,12 +14,13 @@ body{
 
 .container{
     background-color: #fff;
-    border: 5px solid grey;
+    width: 400px;
+    
     padding : 2rem 4rem ;
     border-radius: 10px;
-    width: 40rem;
     text-align: center;
     box-shadow: 3px 6px 10px rgba(0, 0, 0, 1)
+    
     
   
 }
@@ -86,6 +87,7 @@ h1{
     padding:0.5rem 0.8rem ;
     border-radius: 5px;
     cursor: pointer;
+    margin-left: 5px;
 }
 
 .delete-btn:hover{
@@ -95,11 +97,18 @@ h1{
     background-color: #ffc107;
 }
 .edit-btn:hover{
-    background-color: #e0a800;
+    background-color: #9e7701;
 
 }
 
 .date-time{
     font-size: 0.9em;
     color: #666;
+}
+
+@media (max-width : 500px){
+    .container{
+        width: 250px;
+        margin: 20px;
+    }
 }
